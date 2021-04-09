@@ -1,7 +1,7 @@
 FROM alpine:3.11
-EXPOSE 80 443
+EXPOSE 80 443 22
 RUN apk update
-RUN apk add nginx openrc vim openssl
+RUN apk add nginx openrc vim openssl openssh
 RUN mkdir -p /run/nginx
 RUN mkdir -p /run/openrc/
 RUN touch /run/openrc/softlevel
