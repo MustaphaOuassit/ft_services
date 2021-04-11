@@ -6,7 +6,7 @@ mysql -e "CREATE USER 'mustapha'@'%' IDENTIFIED BY 'mustapha';"
 mysql -e "CREATE DATABASE wordpress;"
 mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'mustapha'@'%';"
 mysql -e "FLUSH PRIVILEGES;"
-#mysql < /wordpress.sql
+mysql < /wordpress.sql
 mysql -e "CREATE DATABASE phpmyadmin;"
 mysql < /phpmyadmin.sql
 rc-service mariadb restart
