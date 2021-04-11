@@ -8,6 +8,6 @@ mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'mustapha'@'%';"
 mysql -e "FLUSH PRIVILEGES;"
 #mysql < /wordpress.sql
 mysql -e "CREATE DATABASE phpmyadmin;"
-#mysql < /phpmyadmin.sql
+mysql < /phpmyadmin.sql
 rc-service mariadb restart
 sleep infinity

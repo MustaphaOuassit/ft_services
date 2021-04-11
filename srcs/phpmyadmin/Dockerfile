@@ -10,8 +10,8 @@ RUN rm phpMyAdmin-5.0.2-all-languages.tar.gz
 RUN cp -rf phpmyadmin /var/www/html/
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 COPY ./config.inc.php /var/www/html/
-RUN mkdir -p /var/www/html/phpmyadmin/tmp/
-RUN chmod 777 /var/www/html/phpmyadmin/tmp/
+RUN mkdir -p /var/www/html/tmp/
+RUN chmod 777 /var/www/html/tmp/
 RUN mkdir -p /run/openrc/
 RUN touch /run/openrc/softlevel
 COPY start.sh /

@@ -37,7 +37,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
  */
 
 /* User used to manipulate with storage */
-$cfg['Servers'][$i]['controlhost'] = 'mysql';
+$cfg['Servers'][$i]['controlhost'] = '10.98.38.126';
 $cfg['Servers'][$i]['controlport'] = '3306';
 $cfg['Servers'][$i]['controluser'] = 'mustapha';
 $cfg['Servers'][$i]['controlpass'] = 'mustapha';
