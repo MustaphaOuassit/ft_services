@@ -8,4 +8,5 @@ rc-service nginx restart
 adduser mustapha
 echo 'mustapha:root'|chpasswd
 /etc/init.d/sshd start
+/usr/bin/telegraf &
 sleep infinity

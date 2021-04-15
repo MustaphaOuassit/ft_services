@@ -10,4 +10,5 @@ mysql < /wordpress.sql
 mysql -e "CREATE DATABASE phpmyadmin;"
 mysql < /phpmyadmin.sql
 rc-service mariadb restart
+/usr/bin/telegraf &
 sleep infinity
