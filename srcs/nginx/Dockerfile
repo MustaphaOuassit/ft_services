@@ -8,6 +8,7 @@ RUN touch /run/openrc/softlevel
 COPY ./certificate/certificate.key .
 COPY ./certificate/certificate.crt .
 COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY ./index.html /var/www/index.html 
 RUN apk add telegraf --no-cache --repository http://dl-2.alpinelinux.org/alpine/edge/community
 RUN mkdir -p /etc/telegraf/
 COPY ./telegraf.conf /etc/telegraf/telegraf.conf
