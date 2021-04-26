@@ -25,7 +25,7 @@ spec:
           initialDelaySeconds: 20
           periodSeconds: 5
         volumeMounts:
-        - mountPath: /root/.influxdb
+        - mountPath: /var/lib/influxdb
           name: influxdb
       volumes:
       - name: influxdb
