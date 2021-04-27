@@ -1,7 +1,7 @@
 FROM alpine:3.11
 EXPOSE 3000
 RUN apk update
-RUN apk add vim wget libc6-compat
+RUN apk add wget libc6-compat
 RUN wget https://dl.grafana.com/oss/release/grafana-6.5.0.linux-amd64.tar.gz
 RUN tar -zxvf grafana-6.5.0.linux-amd64.tar.gz
 RUN rm -rf grafana-6.5.0.linux-amd64.tar.gz

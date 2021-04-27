@@ -1,7 +1,7 @@
 FROM alpine:3.11
 EXPOSE 21 2100 2101
 RUN apk update
-RUN apk add vim openrc vsftpd
+RUN apk add openrc vsftpd
 COPY ./certificate/vsftpd.pem .
 COPY ./vsftpd.conf /etc/vsftpd/vsftpd.conf
 
